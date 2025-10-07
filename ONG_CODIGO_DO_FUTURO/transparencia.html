@@ -3,84 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transparência</title>
+    <title>Transparência - ONG Código do Futuro</title>
 </head>
 <body>
     <header>
-        <div>
-            <h1>ONG CODIGO DO FUTURO</h1>
-        </div>
+        <h1>ONG CÓDIGO DO FUTURO</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Página Inicial</a></li>
-                <li><a href="sobre.html">Sobre a Organização</a></li>
-                <li><a href="projetos.html">Projetos Sociais</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
                 <li><a href="voluntariado.html">Voluntariado</a></li>
-                <li><a href="doacoes.html">Como Doar</a></li>
-                <li><a href="transparencia.html">transparência</a></li>
+                <li><a href="doacoes.html">Doações</a></li>
+                <li><a href="transparencia.html">Transparência</a></li>
                 <li><a href="contato.html">Contato</a></li>
-                <li><a href="blog.html">Blog/Notícias</a></li>
+                <li><a href="blog.html">Blog</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h2>Nosso Compromisso com a Transparência</h2>
-        <p>
-            Acreditamos que a transparência é o pilar fundamental para construir uma relação de confiança com nossos doadores, voluntários, parceiros e com a comunidade que servimos. Nesta página, você encontrará todos os documentos e relatórios que demonstram a seriedade e a responsabilidade do nosso trabalho.
-        </p>
-
         <section>
-            <h3>Relatórios Anuais de Atividades</h3>
-            <p>Anualmente, publicamos um relatório completo com todas as atividades realizadas, número de alunos atendidos, projetos concluídos e o impacto gerado por nossas ações.</p>
+            <h2>Nosso Compromisso com a Transparência</h2>
+            <p>Acreditamos que a transparência é o pilar para construir uma relação de confiança. Aqui você encontra relatórios, documentos e dados sobre nosso impacto.</p>
+        </section>
+        <section>
+            <h3>Dados e Impacto Visualizados</h3>
+            <div class="charts-container">
+                <div class="chart">
+                    <h4>Distribuição de Recursos por Projeto</h4>
+                    <canvas id="pieChart" width="400" height="400"></canvas>
+                </div>
+                <div class="chart">
+                    <h4>Evolução de Voluntários (2023-2025)</h4>
+                    <canvas id="lineChart" width="400" height="400"></canvas>
+                </div>
+                <div class="chart">
+                    <h4>Impacto Social por Região</h4>
+                    <canvas id="barChart" width="400" height="400"></canvas>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h3>Relatórios e Documentos</h3>
+            <p>Acesse nossos relatórios anuais, prestações de contas e documentos institucionais.</p>
             <ul>
-                <li><a href="#">Relatório Anual - 2024</a> (Arquivo PDF - Link de exemplo)</li>
-                <li><a href="#">Relatório Anual - 2023</a> (Arquivo PDF - Link de exemplo)</li>
+                <li><a href="#" download>Relatório Anual - 2024 (PDF)</a></li>
+                <li><a href="#" download>Balanço Financeiro - 2024 (PDF)</a></li>
+                <li><a href="#" download>Estatuto Social (PDF)</a></li>
             </ul>
         </section>
-
-        <section>
-            <h3>Prestações de Contas</h3>
-            <p>Disponibilizamos nossos balanços financeiros para que você saiba exatamente como cada real doado foi investido.</p>
-            <ul>
-                <li><a href="#">Balanço Financeiro - 2024</a> (Arquivo PDF - Link de exemplo)</li>
-                <li><a href="#">Balanço Financeiro - 2023</a> (Arquivo PDF - Link de exemplo)</li>
-            </ul>
-        </section>
-
-        <section>
-            <h3>Documentos Institucionais</h3>
-            <p>Acesse os documentos que formalizam e regem a nossa organização.</p>
-            <ul>
-                <li><a href="#">Estatuto Social da ONG Código do Futuro</a> (Arquivo PDF - Link de exemplo)</li>
-                <li><a href="#">Certificado de Inscrição no CNPJ</a> (Arquivo PDF - Link de exemplo)</li>
-            </ul>
-        </section>
-
-        <p>Em caso de dúvidas, nosso canal de contato está sempre aberto.</p>
     </main>
     <footer>
-        <div>
-            <h2>ONG CODIGO DO FUTURO</h2>
-        </div>
         <nav>
             <ul>
                 <li><a href="index.html">Página Inicial</a></li>
-                <li><a href="sobre.html">Sobre a Organização</a></li>
-                <li><a href="projetos.html">Projetos Sociais</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
                 <li><a href="voluntariado.html">Voluntariado</a></li>
-                <li><a href="doacoes.html">Como Doar</a></li>
-                <li><a href="transparencia.html">transparência</a></li>
+                <li><a href="doacoes.html">Doações</a></li>
+                <li><a href="transparencia.html">Transparência</a></li>
                 <li><a href="contato.html">Contato</a></li>
-                <li><a href="blog.html">Blog/Notícias</a></li>
+                <li><a href="blog.html">Blog</a></li>
             </ul>
-        </nav> 
-            <address>
-                Rua Projeto para o Futuro, 1234 - Nova Esperança<br>
-                Boa Vista, Roraima - Brasil<br>
-                Telefone: <a href="tel:+5595991234567">(95) 99123-4567</a><br>
-                Email: <a href="mailto:contato@codigodofuturo.ong.br">contato@codigodofuturo.ong.br</a>
-            </address>
+        </nav>
+        <address>
+            Rua Projeto para o Futuro, 1234 - Nova Esperança<br>
+            Boa Vista, Roraima - Brasil<br>
+            Telefone: <a href="tel:+5595991234567">(95) 99123-4567</a><br>
+            Email: <a href="mailto:contato@codigodofuturo.ong.br">contato@codigodofuturo.ong.br</a>
+        </address>
         <p>&copy; 2025 - Todos os direitos reservados.</p>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const pieCtx = document.getElementById('pieChart').getContext('2d');
+            const pieData = {
+                labels: ['Jovem Programador', 'Tech Mulher', 'Conecta Melhor Idade'],
+                datasets: [{
+                    data: [50, 30, 20],
+                    backgroundColor: ['#d9534f', '#5cb85c', '#f0ad4e']
+                }]
+            };
+            let total = pieData.datasets[0].data.reduce((a, b) => a + b, 0);
+            let startAngle = 0;
+            pieData.datasets[0].data.forEach((value, i) => {
+                let sliceAngle = (value / total) * 2 * Math.PI;
+                pieCtx.fillStyle = pieData.datasets[0].backgroundColor[i];
+                pieCtx.beginPath();
+                pieCtx.moveTo(200, 200);
+                pieCtx.arc(200, 200, 150, startAngle, startAngle + sliceAngle);
+                pieCtx.closePath();
+                pieCtx.fill();
+                startAngle += sliceAngle;
+            });
+            const lineCtx = document.getElementById('lineChart').getContext('2d');
+            lineCtx.beginPath();
+            lineCtx.moveTo(50, 350);
+            lineCtx.lineTo(50, 50);
+            lineCtx.lineTo(350, 50);
+            lineCtx.stroke(); // Eixos
+            lineCtx.strokeStyle = '#337ab7';
+            lineCtx.lineWidth = 3;
+            lineCtx.beginPath();
+            lineCtx.moveTo(50, 300); // 2023
+            lineCtx.lineTo(200, 200); // 2024
+            lineCtx.lineTo(350, 100); // 2025
+            lineCtx.stroke();
+
+            const barCtx = document.getElementById('barChart').getContext('2d');
+            const barData = {
+                'Norte': 80,
+                'Leste': 120,
+                'Oeste': 60
+            };
+            barCtx.fillStyle = '#5bc0de';
+            let x = 50;
+            for(const region in barData) {
+                let height = barData[region];
+                barCtx.fillRect(x, 400 - height - 50, 50, height);
+                barCtx.fillStyle = '#000';
+                barCtx.fillText(region, x + 10, 370);
+                barCtx.fillStyle = '#5bc0de';
+                x += 100;
+            }
+        });
+    </script>
 </body>
 </html>

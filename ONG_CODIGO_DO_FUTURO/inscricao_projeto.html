@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog - ONG Código do Futuro</title>
+    <title>Inscrição em Projeto - ONG Código do Futuro</title>
 </head>
 <body>
     <header>
@@ -23,28 +23,32 @@
         </nav>
     </header>
     <main>
-        <h2>Blog e Notícias</h2>
-        <p>Acompanhe as últimas novidades, histórias de impacto e eventos da nossa organização.</p>
-        <article>
-            <h3>Formatura da Turma de Desenvolvimento Web Básico</h3>
-            <p><time datetime="2025-10-05">Publicado em: 05 de Outubro de 2025</time></p>
-            <picture>
-                <source media="(min-width: 768px)" srcset="https://placehold.co/800x400/5cb85c/FFFFFF?text=Formatura">
-                <img src="https://placehold.co/400x200/5cb85c/FFFFFF?text=Formatura" alt="Foto da turma de formandos em desenvolvimento web" loading="lazy">
-            </picture>
-            <p>É com imenso orgulho que celebramos a formatura da nossa 5ª turma do projeto "Jovem Programador(a)". Foram 6 meses de muito estudo e superação. Os 30 formandos apresentaram seus projetos finais para uma banca de profissionais do mercado.</p>
-            <a href="#">Leia a matéria completa...</a>
-        </article>
-        <article>
-            <h3>Código do Futuro Firma Parceria com a Empresa Tech Inova</h3>
-            <p><time datetime="2025-09-20">Publicado em: 20 de Setembro de 2025</time></p>
-            <picture>
-                <source media="(min-width: 768px)" srcset="https://placehold.co/800x400/337ab7/FFFFFF?text=Parceria">
-                <img src="https://placehold.co/400x200/337ab7/FFFFFF?text=Parceria" alt="Aperto de mãos simbolizando a parceria" loading="lazy">
-            </picture>
-            <p>Temos uma novidade incrível para compartilhar! Fechamos uma parceria com a Tech Inova. A partir de agora, profissionais da empresa atuarão como mentores voluntários em nossos projetos, além de oferecerem workshops exclusivos para nossos alunos.</p>
-            <a href="#">Leia a matéria completa...</a>
-        </article>
+        <h2>Formulário de Inscrição em Projeto</h2>
+        <p>Que legal que você tem interesse em nossos projetos! Preencha o formulário para garantir sua vaga na próxima turma.</p>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Dados do Candidato</legend>
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="email">E-mail para Contato:</label>
+                <input type="email" id="email" name="email" required>
+            </fieldset>
+            <fieldset>
+                <legend>Interesse no Projeto</legend>
+                <label for="projeto">Qual projeto você deseja cursar?</label>
+                <select id="projeto" name="projeto" required>
+                    <option value="">-- Selecione um projeto --</option>
+                    <option value="jovem_programador">Projeto Jovem Programador(a)</option>
+                    <option value="tech_mulher">Projeto Tech Mulher</option>
+                    <option value="conecta_idade">Projeto Conecta Melhor Idade</option>
+                </select>
+                <label for="motivacao">Conte-nos um pouco sobre sua motivação para participar deste projeto:</label>
+                <textarea id="motivacao" name="motivacao" rows="6" required minlength="20"></textarea>
+                <label for="experiencia">Você tem alguma experiência prévia com tecnologia ou programação? (Se não, tudo bem!)</label>
+                <textarea id="experiencia" name="experiencia" rows="4"></textarea>
+            </fieldset>
+            <button type="submit">Enviar Inscrição</button>
+        </form>
     </main>
     <footer>
         <nav>

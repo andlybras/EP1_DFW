@@ -3,104 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
+    <title>Contato - ONG Código do Futuro</title>
 </head>
 <body>
     <header>
-        <div>
-            <h1>ONG CODIGO DO FUTURO</h1>
-        </div>
+        <h1>ONG CÓDIGO DO FUTURO</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Página Inicial</a></li>
-                <li><a href="sobre.html">Sobre a Organização</a></li>
-                <li><a href="projetos.html">Projetos Sociais</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
                 <li><a href="voluntariado.html">Voluntariado</a></li>
-                <li><a href="doacoes.html">Como Doar</a></li>
-                <li><a href="transparencia.html">transparência</a></li>
+                <li><a href="doacoes.html">Doações</a></li>
+                <li><a href="transparencia.html">Transparência</a></li>
                 <li><a href="contato.html">Contato</a></li>
-                <li><a href="blog.html">Blog/Notícias</a></li>
+                <li><a href="blog.html">Blog</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h2>Entre em Contato Conosco</h2>
-        <p>Ficaremos felizes em responder suas perguntas, ouvir suas sugestões ou discutir parcerias. Utilize um dos canais abaixo ou preencha o formulário de contato.</p>
-
         <section>
-            <h3>Nossas Informações</h3>
-            <p>
-                <strong>Endereço:</strong><br>
-                Rua da Tecnologia, nº 123<br>
-                Bairro Inovação, Cidade Exemplo - SP<br>
-                CEP: 12345-678
-            </p>
-            <p>
-                <strong>Telefone:</strong><br>
-                (11) 99999-8888 (WhatsApp)
-            </p>
-            <p>
-                <strong>E-mail:</strong><br>
-                contato@codigodofuturo.ong.br
-            </p>
-            <p>
-                <strong>Horário de Atendimento:</strong><br>
-                Segunda a Sexta, das 9h às 18h.
-            </p>
+            <h2>Entre em Contato Conosco</h2>
+            <p>Tem alguma dúvida, sugestão ou proposta de parceria? Preencha o formulário abaixo e nossa equipe responderá o mais breve possível.</p>
         </section>
-
         <section>
-            <h3>Envie uma Mensagem</h3>
-            <form action="#" method="post">
-                <div>
-                    <label for="nome">Nome:</label><br>
-                    <input type="text" id="nome" name="nome" required>
-                </div>
-                <br>
-                <div>
-                    <label for="email">E-mail:</label><br>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <br>
-                <div>
-                    <label for="assunto">Assunto:</label><br>
-                    <input type="text" id="assunto" name="assunto">
-                </div>
-                <br>
-                <div>
-                    <label for="mensagem">Mensagem:</label><br>
-                    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
-                </div>
-                <br>
-                <div>
-                    <button type="submit">Enviar</button>
-                </div>
+            <h3>Formulário de Contato Institucional</h3>
+            <form action="#" method="post" enctype="multipart/form-data">
+                <fieldset>
+                    <legend>Suas Informações</legend>
+                    
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" required minlength="3">
+                    
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required placeholder="seuemail@dominio.com">
+
+                    <label for="telefone">Telefone (com DDD):</label>
+                    <input type="tel" id="telefone" name="telefone" required pattern="\(\d{2}\)\s\d{4,5}-\d{4}" placeholder="(00) 12345-6789" oninput="maskPhone(this)">
+                </fieldset>
+                <fieldset>
+                    <legend>Sua Mensagem</legend>
+                    <label for="assunto">Assunto:</label>
+                    <select id="assunto" name="assunto" required>
+                        <option value="">-- Escolha um assunto --</option>
+                        <option value="parceria">Proposta de Parceria</option>
+                        <option value="doacao">Dúvidas sobre Doações</option>
+                        <option value="voluntariado">Informações sobre Voluntariado</option>
+                        <option value="imprensa">Contato para Imprensa</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="6" required minlength="20"></textarea>
+
+                    <label for="anexo">Anexar um arquivo (opcional):</label>
+                    <input type="file" id="anexo" name="anexo" accept=".pdf,.doc,.docx,.jpg,.png">
+                </fieldset>
+                <button type="submit">Enviar Mensagem</button>
             </form>
         </section>
     </main>
     <footer>
-        <div>
-            <h2>ONG CODIGO DO FUTURO</h2>
-        </div>
         <nav>
             <ul>
                 <li><a href="index.html">Página Inicial</a></li>
-                <li><a href="sobre.html">Sobre a Organização</a></li>
-                <li><a href="projetos.html">Projetos Sociais</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
                 <li><a href="voluntariado.html">Voluntariado</a></li>
-                <li><a href="doacoes.html">Como Doar</a></li>
-                <li><a href="transparencia.html">transparência</a></li>
+                <li><a href="doacoes.html">Doações</a></li>
+                <li><a href="transparencia.html">Transparência</a></li>
                 <li><a href="contato.html">Contato</a></li>
-                <li><a href="blog.html">Blog/Notícias</a></li>
+                <li><a href="blog.html">Blog</a></li>
             </ul>
-        </nav> 
-            <address>
-                Rua Projeto para o Futuro, 1234 - Nova Esperança<br>
-                Boa Vista, Roraima - Brasil<br>
-                Telefone: <a href="tel:+5595991234567">(95) 99123-4567</a><br>
-                Email: <a href="mailto:contato@codigodofuturo.ong.br">contato@codigodofuturo.ong.br</a>
-            </address>
+        </nav>
+        <address>
+            Rua Projeto para o Futuro, 1234 - Nova Esperança<br>
+            Boa Vista, Roraima - Brasil<br>
+            Telefone: <a href="tel:+5595991234567">(95) 99123-4567</a><br>
+            Email: <a href="mailto:contato@codigodofuturo.ong.br">contato@codigodofuturo.ong.br</a>
+        </address>
         <p>&copy; 2025 - Todos os direitos reservados.</p>
     </footer>
+    <script>
+        function maskPhone(input) {
+            let value = input.value.replace(/\D/g, '');
+            value = value.replace(/^(\d{2})(\d)/g, '($1) $2');
+            value = value.replace(/(\d)(\d{4})$/, '$1-$2');
+            input.value = value;
+        }
+    </script>
 </body>
 </html>
